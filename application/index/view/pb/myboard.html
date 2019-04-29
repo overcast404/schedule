@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>我的订阅号列表</title>
+
+    <link rel="shortcut icon" href="__CDN__/assets/libs/index/favicon.ico">
+    <link href="__CDN__/assets/libs/index/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__CDN__/assets/libs/index/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="__CDN__/assets/libs/index/css/animate.css" rel="stylesheet">
+    <link href="__CDN__/assets/libs/index/css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <!--第一列-->
+            {volist name="pbres" id="pb"}
+            <div class="col-sm-4">
+                <div class="ibox">
+                    <div class="ibox-title">
+                        <span class="label label-primary pull-right"></span>
+                        <h5><a href="{:url('pb/modify',array('pbid'=>$pb['id']))}">{$pb['name']}</a></h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="team-members">
+                            <h3>负责人:{$pb['admin']}</h3>
+                            <a href="#"><img alt="member" class="img-circle" src="{$pb['thumb']}">
+                            </a>
+
+                        </div>
+                        <h4>订阅号简介</h4>
+                        <p>
+                            {$pb['desc']}
+                        </p>
+                        <hr>
+                        <div class="row  m-t-sm">
+                            <div class="col-sm-4">
+                                <div class="font-bold text-center">所属类型</div>
+                                <p class="text-center">{$pb['cateid']}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="font-bold text-center">活动数</div>
+                                <p class="text-center">{$pb['count']}</p>
+                            </div>
+                            <!--未作-->
+                            <div class="col-sm-4">
+                                <div class="font-bold text-center">公告数</div>
+                                <p class="text-center">{$pb['news']}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {/volist}
+            {$pbres->render()}
+        </div>
+    </div>
+
+
+    </div>
+    <!-- 全局js -->
+    <script src="__CDN__/assets/libs/index/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__CDN__/assets/libs/index/js/bootstrap.min.js?v=3.3.6"></script>
+
+
+
+    <!-- 自定义js -->
+    <script src="__CDN__/assets/libs/index/js/content.js?v=1.0.0"></script>
+
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+
+</body>
+
+</html>

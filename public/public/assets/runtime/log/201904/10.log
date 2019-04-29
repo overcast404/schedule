@@ -1,0 +1,87 @@
+---------------------------------------------------------------
+[ 2019-04-10T12:57:24+08:00 ] 127.0.0.1 GET 127.0.0.2/index/index/home
+[运行时间：0.023413s] [吞吐率：42.71req/s] [内存消耗：1,030.05kb] [文件加载：38]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=367fjkrlmkteieaiu02gvt7mva; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1554826911',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Class 'fast\Form' not found[D:\fastadmin\application\common\behavior\Common.php:63]
+---------------------------------------------------------------
+[ 2019-04-10T12:57:25+08:00 ] 127.0.0.1 GET 127.0.0.2/index/index/home
+[运行时间：0.030335s] [吞吐率：32.97req/s] [内存消耗：1,030.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=367fjkrlmkteieaiu02gvt7mva; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1554826911',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Class 'fast\Form' not found[D:\fastadmin\application\common\behavior\Common.php:63]
+---------------------------------------------------------------
+[ 2019-04-10T12:57:25+08:00 ] 127.0.0.1 GET 127.0.0.2/index/index/home
+[运行时间：0.019012s] [吞吐率：52.60req/s] [内存消耗：1,030.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=367fjkrlmkteieaiu02gvt7mva; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1554826911',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Class 'fast\Form' not found[D:\fastadmin\application\common\behavior\Common.php:63]

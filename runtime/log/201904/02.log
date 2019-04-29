@@ -1,0 +1,408 @@
+---------------------------------------------------------------
+[ 2019-04-02T00:09:51+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018982s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.003854s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.002779s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'category' LIMIT 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:51+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&_=1554134991692
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002790s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.003487s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:52+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=default&_=1554134991693
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002633s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.001260s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:53+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=page&_=1554134991694
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012249s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.002183s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:54+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=article&_=1554134991695
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002671s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:55+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=test&_=1554134991696
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002296s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:57+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=all&_=1554134991697
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001864s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:09:58+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012347s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.002289s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:10:00+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002188s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sd_admin` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:10:00+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554135000391
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003453s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sd_admin` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `sd_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `sd_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:10:01+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/adminlog?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011566s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sd_admin` [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'auth/adminlog' LIMIT 1 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:10:01+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/adminlog/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554135001312
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002018s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sd_admin` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin_log` [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_admin_log` WHERE  `admin_id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_admin_log` WHERE  `admin_id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:10:18+08:00 ] 127.0.0.1 GET 127.0.0.2/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012631s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001218s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '752f485fd9b36da9eccf2215c16730c4197c714d' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.002677s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:15:42+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=all&_=1554134991698
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002883s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:16+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/user/user?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001851s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.000394s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:16+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/user/user/index?sort=user.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554135376523
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002252s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_group` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_user` `user` LEFT JOIN `sd_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`user`.`group_id`,`user`.`username`,`user`.`nickname`,`user`.`password`,`user`.`salt`,`user`.`email`,`user`.`mobile`,`user`.`avatar`,`user`.`level`,`user`.`gender`,`user`.`birthday`,`user`.`bio`,`user`.`money`,`user`.`score`,`user`.`successions`,`user`.`maxsuccessions`,`user`.`prevtime`,`user`.`logintime`,`user`.`loginip`,`user`.`loginfailure`,`user`.`joinip`,`user`.`jointime`,`user`.`createtime`,`user`.`updatetime`,`user`.`token`,`user`.`status`,`user`.`verification`,group.id AS group__id,group.name AS group__name,group.rules AS group__rules,group.createtime AS group__createtime,group.updatetime AS group__updatetime,group.status AS group__status FROM `sd_user` `user` LEFT JOIN `sd_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 0,10 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:17+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/user/group?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011210s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'user/group' LIMIT 1 [ RunTime:0.000378s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:17+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/user/group/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554135377364
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012118s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_group` [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_user_group` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_group` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:17+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/user/rule?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012228s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_rule` [ RunTime:0.001776s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_rule` ORDER BY `weigh` DESC [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'user/rule' LIMIT 1 [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:18+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/user/rule/index?sort=weigh&order=desc&_=1554135377989
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002028s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_rule` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_rule` ORDER BY `weigh` DESC [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:20+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554135000392
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002233s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sd_admin` [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `sd_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `sd_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:21+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/adminlog/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554135001313
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002403s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sd_admin` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin_log` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_admin_log` WHERE  `admin_id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_admin_log` WHERE  `admin_id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:21+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/group?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021331s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'auth/group' LIMIT 1 [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:22+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/group/index?sort=id&order=desc&_=1554135382035
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002111s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001219s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_group` WHERE  `id` IN (1,2,3,5,4) [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:22+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012362s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:23+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule/index?sort=weigh&order=desc&_=1554135382916
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012344s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:24+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=all&_=1554134991699
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001942s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:16:26+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011478s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001180s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_config` [ RunTime:0.001869s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_config` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:32:25+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/general/attachment?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002116s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001181s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'general/attachment' LIMIT 1 [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:32:25+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/general/attachment/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554136345147
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002066s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_attachment` [ RunTime:0.002181s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_attachment` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:32:26+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/general/attachment/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1554136345148
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002050s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_attachment` [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_attachment` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000583s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:32:26+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/general/profile?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002023s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000750s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:32:27+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/general/profile/index?sort=id&order=desc&offset=0&limit=10&_=1554136347046
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003337s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin_log` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:32:27+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/category/index?sort=weigh&order=desc&type=all&_=1554134991700
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001828s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001973s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_category` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2019-04-02T00:56:43+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule/index?sort=weigh&order=desc&_=1554135382917
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002173s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001126s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000634s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:15+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002953s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:15+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002077s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:15+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002764s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:16+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012103s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:16+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule/index?sort=weigh&order=desc&_=1554172156507
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005819s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:16+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/auth/rule/index?sort=weigh&order=desc&_=1554172156508
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002369s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2019-04-02T10:29:18+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002661s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000318s ]

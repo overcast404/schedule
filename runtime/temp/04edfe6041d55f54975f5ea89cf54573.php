@@ -1,0 +1,188 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"D:\fastadmin\public/../application/index\view\pb\modify.html";i:1556544962;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>订阅号资料修改</title>
+
+    <link rel="shortcut icon" href="/assets/libs/index/favicon.ico">
+    <link href="/assets/libs/index/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/assets/libs/index/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/assets/libs/index/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/libs/index/css/plugins/cropper/cropper.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="/assets/libs/index/css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row animated fadeInRight">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>订阅号资料</h5>
+                    </div>
+                    <div>
+                        <form role="form" method="post" class="form-horizontal" action="<?php echo url('pb/modify'); ?>"enctype="multipart/form-data" >
+                        <input type="hidden" name="id" value="<?php echo $pbres['id']; ?>">
+                        <div class="ibox-content profile-content">
+                            <div class="tabs-container">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">
+                                            修改订阅号资料</a>
+                                    </li>
+                                    
+                                    <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">权限修改</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane active">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label"
+                                                    style="text-align: center;margin-top: 6px;">订阅号名称:</label>
+                                                <span class="input-group col-sm-5 col-sm-offset-0"><input type="text" name="name"
+                                                        class="form-control" placeholder="请输入用户名" value="<?php echo $pbres['name']; ?>"
+                                                        required="" aria-required="true"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label class="col-sm-2 control-label"
+                                                        style="text-align: center;margin-top: 6px;">订阅号类型:</label>
+                                                                <span class="input-group col-sm-5 col-sm-offset-0">
+                                                                        <select name="cateid" id="cateid" class="form-control m-d">
+                                                                            <?php if(is_array($cateres) || $cateres instanceof \think\Collection || $cateres instanceof \think\Paginator): $i = 0; $__LIST__ = $cateres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?>
+                                                                            <option <?php if($cate['id'] == $pbres['cateid']): ?> selected="selected" <?php endif; ?>value="<?php echo $cate['id']; ?>"><?php echo $cate['catename']; ?></option>
+                                                                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                                                                        </select>
+                                                                    </span>
+                                                        
+                                                </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label"
+                                                    style="text-align: center;margin-top: 6px;">联系电话:</label>
+                                                <span class="input-group col-sm-5 col-sm-offset-0"><input type="tel"name="mobile"
+                                                        class="form-control" placeholder="phone" value="<?php echo $pbres['mobile']; ?>"
+                                                        required="" aria-required="true"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label class="col-sm-2 control-label"
+                                                        style="text-align: center;margin-top: 6px;">订阅号头像:</label>
+                                                        <div class="input-group col-sm-5 col-sm-offset-0">
+                                                                <input  placeholder="订阅号头像"   class="form-control" name="thumb" type="file" value="<?php echo $pbres['thumb']; ?>">
+                                                                <img src="<?php echo $pbres['thumb']; ?>"height="50">
+                                                        </div>
+
+                                                </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label"
+                                                    style="text-align: center;margin-top: 6px;">订阅号简介:</label>
+                                                <span class="input-group col-sm-5 col-sm-offset-0"><textarea name="desc"
+                                                        id="desc" cols="30" rows="10"
+                                                        class="form-control"><?php echo $pbres['desc']; ?></textarea></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-2" class="tab-pane">
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label"
+                                                        style="text-align: center;margin-top: 6px;">解散:</label>
+                                                    <span class="input-group col-sm-5 col-sm-offset-0"><button
+                                                            class="btn btn-danger" tybe="subimt" name="status" value="1">解散</button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+
+                                <div class="user-button">
+                                    <div class="row">
+
+                                        <div class="col-sm-2 col-sm-offset-5" style="margin-top:10px">
+                                            <button type="submit" class="btn btn-primary btn-sm btn-block"><i
+                                                    class="fa fa-coffee"></i> 保存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/assets/libs/index/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/assets/libs/index/js/bootstrap.min.js?v=3.3.6"></script>
+
+
+
+    <!-- 自定义js -->
+    <script src="/assets/libs/index/js/content.js?v=1.0.0"></script>
+
+    <script src="/assets/libs/index/js/plugins/layer/laydate/laydate.js"></script>
+
+
+
+    <!-- Peity -->
+    <script src="https://cdn.bootcss.com/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
+    <script src="/assets/libs/index/js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="/assets/libs/index/js/plugins/cropper/cropper.min.js"></script>
+
+    <script>
+            $(document).ready(function () {
+                $('#croppic').cropper({
+                    aspectRatio: 16 / 9,
+                    viewMode: 1,
+                    crop: function (e) {
+                        console.log(e);
+                    }
+                });
+                $("#speciality").tagsinput();
+    
+               $('.canel').on('click',function(){
+                
+                   $('.modal-backdrop.in').css('display','none');
+               });
+    
+               $('.confirm').on('click',function(){
+                $ajax({
+                        type:'POST',
+                        dataType:'json',
+                        url:'',
+                        //参数
+                        data:'',
+                        success:function(res){
+                            //检验
+                            if(res=''){
+                                alert('删除成功');
+                            }
+                        },
+                        error:function(){
+                            console.log('Can not send the param=>user!')
+                        }
+                    })
+               })
+            })
+        </script>
+
+    <!-- Peity -->
+    <script src="/assets/libs/index/js/demo/peity-demo.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+
+</body>
+
+</html>

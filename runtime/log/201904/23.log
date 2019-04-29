@@ -1,0 +1,2389 @@
+---------------------------------------------------------------
+[ 2019-04-23T00:00:10+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/join.html
+[运行时间：0.054833s] [吞吐率：18.24req/s] [内存消耗：3,039.66kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004239s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001418s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->join[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.001786s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` LIMIT 0,3 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:02:41+08:00 ] 127.0.0.1 GET 127.0.0.2/index/user/index.html
+[运行时间：0.070837s] [吞吐率：14.12req/s] [内存消耗：2,929.99kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002713s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001636s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ D:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010641s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001515s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:02:41+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/main.html
+[运行时间：0.051079s] [吞吐率：19.58req/s] [内存消耗：2,835.38kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002575s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001435s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->main[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\main.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001260s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.002854s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001373s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:02:42+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/join.html
+[运行时间：0.091934s] [吞吐率：10.88req/s] [内存消耗：3,172.98kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002327s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001105s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->join[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010792s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.001424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` LIMIT 0,3 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000542s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:02:48+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/projects.html
+[运行时间：0.042685s] [吞吐率：23.43req/s] [内存消耗：2,944.55kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002481s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'projects',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/pb/join.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001153s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001069s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:09+08:00 ] 127.0.0.1 GET 127.0.0.2/index/user/index.html
+[运行时间：0.055554s] [吞吐率：18.00req/s] [内存消耗：2,929.99kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010949s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001602s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ D:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002018s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.002091s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:09+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/main.html
+[运行时间：0.065618s] [吞吐率：15.24req/s] [内存消耗：2,835.38kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005158s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001495s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->main[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\main.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001056s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000972s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:10+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/join.html
+[运行时间：0.105324s] [吞吐率：9.49req/s] [内存消耗：3,173.02kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003814s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004024s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->join[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002733s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.002533s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001254s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` LIMIT 0,3 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000507s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:11+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/join.html
+[运行时间：0.098003s] [吞吐率：10.20req/s] [内存消耗：3,171.88kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004971s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001181s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->join[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011076s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` LIMIT 0,3 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:11+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/found.html
+[运行时间：0.068765s] [吞吐率：14.54req/s] [内存消耗：2,865.23kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002494s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'found',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/join.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003047s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->found[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\found.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010611s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:17+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/join.html
+[运行时间：0.078652s] [吞吐率：12.71req/s] [内存消耗：3,039.45kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004662s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001362s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->join[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010331s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` LIMIT 0,3 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:21+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/found.html
+[运行时间：0.051778s] [吞吐率：19.31req/s] [内存消耗：2,865.23kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002591s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'found',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/join.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001151s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->found[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\found.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011498s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000229s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:31+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/found.html
+[运行时间：0.068992s] [吞吐率：14.49req/s] [内存消耗：2,865.23kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003963s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'found',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001117s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->found[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\found.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010758s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001084s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:31+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/found.html
+[运行时间：0.055507s] [吞吐率：18.02req/s] [内存消耗：2,862.48kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002920s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'found',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001112s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->found[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\found.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010755s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:33+08:00 ] 127.0.0.1 GET 127.0.0.2/index/form/team.html
+[运行时间：0.086863s] [吞吐率：11.51req/s] [内存消耗：2,860.59kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004242s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'form',
+    2 => 'team',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001106s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Form->team[ D:\fastadmin\application\index\controller\Form.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\form\team.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001045s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000435s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:34+08:00 ] 127.0.0.1 GET 127.0.0.2/index/form/pb.html
+[运行时间：0.079213s] [吞吐率：12.62req/s] [内存消耗：2,863.03kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'form',
+    2 => 'pb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001140s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Form->pb[ D:\fastadmin\application\index\controller\Form.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\form\pb.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010096s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:35+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/main.html
+[运行时间：0.054240s] [吞吐率：18.44req/s] [内存消耗：2,835.38kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004132s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001607s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->main[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\main.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010799s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001339s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000659s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:35+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/pb.html
+[运行时间：0.060396s] [吞吐率：16.56req/s] [内存消耗：2,831.32kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002379s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'pb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002157s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->pb[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\pb.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011273s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000997s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.002166s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:04:36+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/labelwall.html
+[运行时间：0.053154s] [吞吐率：18.81req/s] [内存消耗：2,831.52kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002281s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'labelwall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001833s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->labelwall[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\labelwall.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010694s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:15+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/board.html
+[运行时间：0.068115s] [吞吐率：14.68req/s] [内存消耗：3,030.20kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003962s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'board',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001368s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->board[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\board.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001204s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 0,3 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT `catename` FROM `sd_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pbnews` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pbnews` WHERE  `pbid` = 13 ORDER BY `time` DESC [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:16+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/myboard.html
+[运行时间：0.062163s] [吞吐率：16.09req/s] [内存消耗：3,030.21kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002647s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'myboard',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001202s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->myboard[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\myboard.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010657s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 0,3 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT `catename` FROM `sd_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pbnews` [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pbnews` WHERE  `pbid` = 13 ORDER BY `time` DESC [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:17+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/modify/pbid/13.html
+[运行时间：0.053785s] [吞吐率：18.59req/s] [内存消耗：2,892.11kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002320s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/pb/myboard.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'pbid' => '13',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002193s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->modify[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010339s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000740s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:20+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/board.html
+[运行时间：0.062471s] [吞吐率：16.01req/s] [内存消耗：3,047.61kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003305s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'board',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001117s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->board[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\board.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010809s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.002007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` WHERE  (  id IN(22,23,24) ) LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  (  id IN(22,23,24) ) LIMIT 0,3 [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:21+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/myboard.html
+[运行时间：0.047822s] [吞吐率：20.91req/s] [内存消耗：3,033.05kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002910s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'myboard',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001151s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->myboard[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\myboard.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamer',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001418s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` WHERE  `author` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `author` = 1 ORDER BY `time` DESC LIMIT 0,3 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:21+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/img/user.png
+[运行时间：0.046768s] [吞吐率：21.38req/s] [内存消耗：2,943.96kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002617s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/myboard.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001326s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:22+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/22.html
+[运行时间：0.077418s] [吞吐率：12.92req/s] [内存消耗：2,920.19kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002429s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/myboard.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001136s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011226s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001634s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:22+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/img/a2.jpg
+[运行时间：0.064693s] [吞吐率：15.46req/s] [内存消耗：2,996.84kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003352s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/modify/id/22.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'img',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001229s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000267s ]
+[ error ] [8]未定义数组索引: id[D:\fastadmin\runtime\temp\9202e4b5753748ed2a9f06253f8f629f.php:33]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:22+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/img/a5.jpg
+[运行时间：0.062438s] [吞吐率：16.02req/s] [内存消耗：2,996.84kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003432s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/modify/id/22.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'img',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001543s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001293s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001609s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000323s ]
+[ error ] [8]未定义数组索引: id[D:\fastadmin\runtime\temp\9202e4b5753748ed2a9f06253f8f629f.php:33]
+---------------------------------------------------------------
+[ 2019-04-23T00:05:22+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/img/a4.jpg
+[运行时间：0.091522s] [吞吐率：10.93req/s] [内存消耗：2,996.84kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003841s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/modify/id/22.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'img',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001742s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000980s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.002485s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000206s ]
+[ error ] [8]未定义数组索引: id[D:\fastadmin\runtime\temp\9202e4b5753748ed2a9f06253f8f629f.php:33]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:19+08:00 ] 127.0.0.1 GET 127.0.0.2/index/user/index.html
+[运行时间：0.076571s] [吞吐率：13.06req/s] [内存消耗：2,929.99kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004406s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002199s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ D:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001505s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.002984s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001131s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:20+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/main.html
+[运行时间：0.057096s] [吞吐率：17.51req/s] [内存消耗：2,835.38kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003061s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004427s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->main[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\main.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002754s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001929s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:20+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/join.html
+[运行时间：0.071013s] [吞吐率：14.08req/s] [内存消耗：3,039.45kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002282s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001196s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->join[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010224s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` LIMIT 0,3 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:37+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/board.html
+[运行时间：0.062739s] [吞吐率：15.94req/s] [内存消耗：3,030.20kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003185s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'board',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001744s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->board[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\board.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011171s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 0,3 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `catename` FROM `sd_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pbnews` [ RunTime:0.001523s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pbnews` WHERE  `pbid` = 13 ORDER BY `time` DESC [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:38+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/myboard.html
+[运行时间：0.060384s] [吞吐率：16.56req/s] [内存消耗：3,030.21kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002300s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'myboard',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001421s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->myboard[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\myboard.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011059s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.002003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  (  id IN(13) ) LIMIT 0,3 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT `catename` FROM `sd_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pbnews` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pbnews` WHERE  `pbid` = 13 ORDER BY `time` DESC [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:39+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/myboard.html
+[运行时间：0.070798s] [吞吐率：14.12req/s] [内存消耗：3,033.05kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002251s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'myboard',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001259s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->myboard[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\myboard.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamer',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011376s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` WHERE  `author` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `author` = 1 ORDER BY `time` DESC LIMIT 0,3 [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:39+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/img/user.png
+[运行时间：0.065928s] [吞吐率：15.17req/s] [内存消耗：2,943.96kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000080s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002708s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/myboard.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001305s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010150s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:40+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/22.html
+[运行时间：0.056768s] [吞吐率：17.62req/s] [内存消耗：2,920.19kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002631s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/myboard.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002134s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:40+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/img/a5.jpg
+[运行时间：0.066263s] [吞吐率：15.09req/s] [内存消耗：2,996.84kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012086s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/modify/id/22.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'img',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002590s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000825s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001161s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001696s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.001407s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.001476s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000288s ]
+[ error ] [8]未定义数组索引: id[D:\fastadmin\runtime\temp\9202e4b5753748ed2a9f06253f8f629f.php:33]
+---------------------------------------------------------------
+[ 2019-04-23T00:09:40+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/modify/id/img/a2.jpg
+[运行时间：0.089117s] [吞吐率：11.22req/s] [内存消耗：2,996.84kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012435s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/team/modify/id/22.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'img',
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001256s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->modify[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\modify.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.002834s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000218s ]
+[ error ] [8]未定义数组索引: id[D:\fastadmin\runtime\temp\9202e4b5753748ed2a9f06253f8f629f.php:33]
+---------------------------------------------------------------
+[ 2019-04-23T00:10:46+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/join.html
+[运行时间：0.051743s] [吞吐率：19.33req/s] [内存消耗：3,044.59kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002787s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001448s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->join[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+  4 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001052s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_pb` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` LIMIT 0,3 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:14:09+08:00 ] 127.0.0.1 GET 127.0.0.2/index/form/pb.html
+[运行时间：0.073313s] [吞吐率：13.64req/s] [内存消耗：2,863.03kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003017s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'form',
+    2 => 'pb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001429s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Form->pb[ D:\fastadmin\application\index\controller\Form.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\form\pb.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'pbres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011553s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_pb` [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_pb` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:14:10+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/main.html
+[运行时间：0.058537s] [吞吐率：17.08req/s] [内存消耗：2,835.38kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005105s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001238s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->main[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\main.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011164s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000760s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:14:10+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/team.html
+[运行时间：0.055976s] [吞吐率：17.86req/s] [内存消耗：2,831.38kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006785s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'team',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001104s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->team[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\team.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010194s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000635s ]
+---------------------------------------------------------------
+[ 2019-04-23T00:14:24+08:00 ] 127.0.0.1 GET 127.0.0.2/index/calender/pb.html
+[运行时间：0.055230s] [吞吐率：18.11req/s] [内存消耗：2,831.32kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005420s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'calender',
+    2 => 'pb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001504s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Calender->pb[ D:\fastadmin\application\index\controller\Calender.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\calender\pb.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002199s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000536s ]
+---------------------------------------------------------------
+[ 2019-04-23T22:25:11+08:00 ] 127.0.0.1 GET 127.0.0.2/index/user/mail_compose.html
+[运行时间：0.903544s] [吞吐率：1.11req/s] [内存消耗：2,973.16kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000231s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.052109s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'mail_compose',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.017812s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->_empty[ D:\fastadmin\application\index\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006863s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.007576s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001662s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000334s ]
+[ error ] [0]模板文件不存在:D:\fastadmin\public/../application/index\view\user\mail_compose.html[D:\fastadmin\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2019-04-23T22:26:53+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/join.html
+[运行时间：0.182542s] [吞吐率：5.48req/s] [内存消耗：3,039.45kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002496s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'join',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001181s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->join[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\join.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+  4 => 'teamres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011102s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001285s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.001727s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_team` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sd_team` LIMIT 1 [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_team` LIMIT 0,3 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2019-04-23T22:27:10+08:00 ] 127.0.0.1 GET 127.0.0.2/index/team/found.html
+[运行时间：0.057196s] [吞吐率：17.48req/s] [内存消耗：2,865.23kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002858s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'team',
+    2 => 'found',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001421s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Team->found[ D:\fastadmin\application\index\controller\Team.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\team\found.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'collegeres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002401s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_college` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_college` [ RunTime:0.000259s ]
+---------------------------------------------------------------
+[ 2019-04-23T22:27:10+08:00 ] 127.0.0.1 GET 127.0.0.2/index/pb/found.html
+[运行时间：0.094703s] [吞吐率：10.56req/s] [内存消耗：2,862.48kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002472s ]
+[ info ] [ LANG ] D:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pb',
+    2 => 'found',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1554814376; PHPSESSID=kthc3k8umb1utr0mmdpr638er1; keeplogin=1%7C86400%7C1555928641%7Cac07905f82c0f33a8f34bd6ae6102f7c; uid=1; token=4c6b2ef7-43fe-4ced-a9f3-614bec557ec8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.2/index/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001937s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pb->found[ D:\fastadmin\application\index\controller\Pb.php ]
+[ info ] [ VIEW ] D:\fastadmin\public/../application/index\view\pb\found.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'cateres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011510s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user_token` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user_token` WHERE  `token` = '01a189af56cd5b5f6d3bedd50dfd1b500c9eb31f' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_user` [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_cate` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_cate` [ RunTime:0.000742s ]

@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2019-04-05T07:51:44+08:00 ] 127.0.0.1 POST 127.0.0.2/admin/index/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003909s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin_log` [ RunTime:0.014735s ]
+[ sql ] [ SQL ] INSERT INTO `sd_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"__token__\":\"f4ca9c99d477af7b142f8ed2af11d947\",\"username\":\"admin\",\"captcha\":\"zjhy\"}' , '/admin/index/login.html' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36' , '127.0.0.1' , 1554421904) [ RunTime:0.006161s ]
+---------------------------------------------------------------
+[ 2019-04-05T07:51:52+08:00 ] 127.0.0.1 POST 127.0.0.2/admin/index/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011996s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin` [ RunTime:0.007435s ]
+[ sql ] [ SQL ] SELECT * FROM `sd_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.003621s ]
+[ sql ] [ SQL ] UPDATE `sd_admin`  SET `logintime`=1554421912,`token`='41f94656-5dc7-4cdc-b819-8122db204fe1',`updatetime`=1554421912  WHERE  `id` = 1 [ RunTime:0.007268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_admin_log` [ RunTime:0.001778s ]
+[ sql ] [ SQL ] INSERT INTO `sd_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"36a1f7ad0e5407ef56c15a404ae18357\",\"username\":\"admin\",\"captcha\":\"j7GB\"}' , '/admin/index/login.html' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36' , '127.0.0.1' , 1554421912) [ RunTime:0.002719s ]
+---------------------------------------------------------------
+[ 2019-04-05T07:51:52+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002144s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.003169s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.004192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.001828s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000827s ]
+---------------------------------------------------------------
+[ 2019-04-05T07:51:53+08:00 ] 127.0.0.1 GET 127.0.0.2/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002493s ] mysql:host=127.0.0.2;dbname=schedule;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_group_access` [ RunTime:0.001852s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `sd_auth_group_access` `aga` LEFT JOIN `sd_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sd_auth_rule` [ RunTime:0.002982s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `sd_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `sd_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000488s ]
